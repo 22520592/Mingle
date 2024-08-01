@@ -1,12 +1,12 @@
-@import url("../styles/theme.css");
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@import url("../styles/theme.css");
+
 body {
-  font-family: "Josefin Sans";
+  font-family: "Josefin Sans", sans-serif;
 }
 
 @layer utilities {
@@ -27,16 +27,16 @@ body {
   }
 
   .btn {
-    @apply bg-light-600 dark:bg-dark-200 !important;
+    @apply bg-light-800 dark:bg-dark-300 !important;
   }
 
   .btn-secondary {
-    @apply bg-primary-100 dark:bg-dark-200 !important;
+    @apply bg-light-800 dark:bg-dark-400 !important;
   }
 
-  /* .btn-tertiary {
+  .btn-tertiary {
     @apply bg-light-700 dark:bg-dark-300 !important;
-  } */
+  }
 
   .markdown {
     @apply max-w-full prose dark:prose-p:text-light-700 dark:prose-ol:text-light-700 dark:prose-ul:text-light-500 dark:prose-strong:text-white dark:prose-headings:text-white prose-headings:text-dark-400 prose-h1:text-dark-300 prose-h2:text-dark-300 prose-p:text-dark-500 prose-ul:text-dark-500 prose-ol:text-dark-500;

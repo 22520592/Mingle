@@ -24,7 +24,7 @@
   }
 
   .text-dark100_light500 {
-    @apply text-dark-100 dark:text-light-500 !important;
+    @apply dark:text-dark-100 text-light-500 !important;
   }
 
   .text-dark100_primary100 {
